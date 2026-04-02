@@ -813,7 +813,7 @@ The `&u escapes to heap` line tells you that the `User` in `createOnHeap()` is a
 For more detail, add a second `-m`:
 
 ```bash
-go build -gcflags='-m -m' . 2>&1 | grep -A2 escape.go
+go build -gcflags='-m -m' . 2>&1 | grep escape
 ```
 
 This shows the compiler's reasoning for each allocation decision.
